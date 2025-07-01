@@ -10,7 +10,7 @@ import repo_download
 from datetime import datetime
 
 parser = argparse.ArgumentParser(description="Cloud chatbot 启动脚本", add_help=True)
-parser.add_argument('--port', nargs='?', const=True, help='指定服务端口号')
+parser.add_argument('--port', nargs='?', const=7860, default=7860, type=int, help='指定服务端口号，默认为7860')
 parser.add_argument('--listen', nargs='?', const=True, help='以 0.0.0.0 作为服务器名称启动 Gradio，允许响应网络请求')
 parser.add_argument('--ui-test', action='store_true', help="允许在无显卡模式下启动，以测试UI的功能")
 parser.add_argument('--model-set', nargs='?', const=True, help='选择模型并加载对应配置信息')
