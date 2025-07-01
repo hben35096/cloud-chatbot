@@ -1,0 +1,6 @@
+torch
+torchvision
+transformers>=4.46.0
+gradio
+modelscope
+pyyaml
